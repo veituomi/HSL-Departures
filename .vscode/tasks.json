@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "command": "tsc",
+    "isShellCommand": true,
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "build",
+            "isBuildCommand": true,
+            "isTestCommand": false,
+            "problemMatcher": "$tsc",
+            "args": [
+            ]
+        },
+        {
+            "taskName": "test",
+            "isBuildCommand": false,
+            "isTestCommand": true,
+            "problemMatcher": "$tsc",
+            "args": [
+                "--p",
+                "test/tsconfig.json"
+            ]
+        }
+    ]
+}

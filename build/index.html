@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Departures</title>
+        <script type="text/javascript" src="app.js"></script>
+        <style type="text/css">
+            body {
+                background: #003873;
+                font-family: Arial, Helvetica, sans-serif;
+                overflow: hidden;
+                margin: 0px;
+            }
+            #infoContainer {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                color: #ffffff;
+                margin: 10px 0px 20px 0px;
+            }
+            .departures-header {
+                border-collapse: collapse;
+                font-size: 35px;
+                font-weight: bold;
+                background: #002852;
+                color: #ffffff;
+                width: 100%;
+            }
+            .departures-body {
+                border-collapse: collapse;
+                color: #ffff00;
+                font-weight: bold;
+                font-size: 40px;
+                width: 100%;
+            }
+            .departures-body td, .departures-header td {
+                padding: 10px 20px 10px 20px;
+                border-bottom: 1px solid #ffffff;
+            }
+            .time {
+                width: 300px;
+                text-align: left;
+            }
+            .line {
+                width: 200px;
+                text-align: left;
+            }
+            .destination {
+                text-align: left;
+            }
+            .stop {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body onload="Departures.App.main()">
+        <div id="infoContainer">
+            XX:XX:XX
+        </div>
+        <div id="departuresHeaderContainer">
+            <table class="departures-header">
+                <tr>
+                    <td class="time">Lähtöaika</td>
+                    <td class="line">Linja</td>
+                    <td class="destination">Määränpää</td>
+                    <td class="stop">Pysäkki</td>
+                </tr>
+            </table>
+        </div>
+        <div id="nextDeparturesContainer"></div>
+    </body>
+</html>
